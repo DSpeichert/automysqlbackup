@@ -14,7 +14,8 @@ install:
 	dh_testdir
 	dh_testroot
 	dh_installdirs
-	install -D -m 644 debian/defaults debian/automysqlbackup/etc/default/automysqlbackup
+	install -D -m 644 debian/automysqlbackup.conf debian/automysqlbackup/etc/automysqlbackup/automysqlbackup.conf
+	install -D -m 644 debian/logrotate debian/automysqlbackup/etc/logrotate.d/automysqlbackup
 
 binary-indep: install
 	dh_testdir

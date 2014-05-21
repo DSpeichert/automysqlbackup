@@ -1,3 +1,10 @@
 #!/bin/sh
 test -x /usr/sbin/automysqlbackup || exit 0
-/usr/sbin/automysqlbackup
+
+if [ ! -d /var/log/mysql ] ; then
+    mkdir -p /var/log/mysql
+    chown mysql:adm /var/log/mysql
+    chmod 42750 /var/log/mysql
+fi
+
+/usr/sbin/automysqlbackup >> /var/log/mysql/automysqlbackup.log 2>&1

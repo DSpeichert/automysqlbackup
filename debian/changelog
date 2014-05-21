@@ -1,3 +1,10 @@
+automysqlbackup (3.0~rc6+debian-1) trusty; urgency=low
+
+  * Updated to upstream 3.0_rc6 version
+
+ -- Daniel Speichert <daniel@speichert.pl>  Tue, 20 May 2014 14:27:12 -0500
+
+
 automysqlbackup (2.6+debian.3-1) unstable; urgency=high
 
   * Fixes: Code injection via unsafe database names inside eval calls, thanks

@@ -10,5 +10,5 @@ automysqlbackup for Debian
  The package include the adequate cron entries so that it automatically
  performs the backup as configured.
 
- All parameters can be setup by editing the /etc/default/automysqlbackup file
+ All parameters can be setup by editing the /etc/automysqlbackup/automysqlbackup.conf file
 
